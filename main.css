@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-image img,
+.second-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image img {
+  height: 60vh; /* You can change this height */
+}
+
+.second-image img {
+  height: 80vh; /* Adjust as needed */
+}
+
+.hero-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+}
+
+.fade-text {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  color: white;
+  opacity: 0;
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translate(-50%, 20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+}
+.about {
+  padding: 60px 40px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: left; /* Aligns text to the left */
+}
+
+.about h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 34px;
+  line-height: 1.6;
+  margin: 0; /* Removes auto-centering */
+}
+.contact {
+  padding: 60px 40px;
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.contact p,
+.contact ul {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
